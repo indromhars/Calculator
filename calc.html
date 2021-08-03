@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <form onsubmit="return false" method="post" name="Calculator">
+        <div class="text-5xl font-medium antialiased text-center mt-20 mr-4">Project Count</div>
+        <div class="container flex justify-center mt-20">
+            <input id="first" class="w-64 h-10 mt-6 ml-14 pb-px pl-3 focus:outline-none ring-2 ring-indigo-300 ring-offset-0 rounded-md shadow-xl text-center" type="text" placeholder="First number">
+            <input id="second" class="w-64 h-10 mt-6 ml-10 pb-px pl-3 focus:outline-none ring-2 ring-indigo-300 ring-offset-0 rounded-md shadow-xl text-center" type="text" placeholder="Second number">
+        </div>
+        <div class="container flex justify-center mt-20">
+            <button id="tambah" type="submit" class="w-36 h-16 m-4 ml-20 bg-indigo-600 hover:bg-red-600 transition-all text-white font-medium text-xl rounded-md shadow-2xl" onclick="sum();">+</button>
+            <button id="kurang" type="submit" class="w-36 h-16 m-4 bg-indigo-600 hover:bg-red-600 transition-all text-white font-medium text-xl rounded-md shadow-2xl" onclick="sub();">-</button>
+            <button id="kali" type="submit" class="w-36 h-16 m-4 bg-indigo-600 hover:bg-red-600 transition-all text-white font-medium text-xl rounded-md shadow-2xl" onclick="mul();">x</button>
+            <button id="bagi" type="submit" class="w-36 h-16 m-4 bg-indigo-600 hover:bg-red-600 transition-all text-white font-medium text-xl rounded-md shadow-2xl" onclick="div()">÷</button>
+        </div>
+        <div class="container flex justify-center mt-20">
+            <div id="hasil" class="h-10 w-1/2 mt-6 ml-14 pb-px pt-1 pl-3 focus:outline-none ring-2 ring-indigo-300 ring-offset-0 rounded-md shadow-xl text-center"></div>
+        </div>
+    </form>
+<script src="cal.js"></script>
+</body>
+</html>
